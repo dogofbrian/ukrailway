@@ -6,7 +6,7 @@ UK railway data extracted from publicly available datasets (see [Rail Delivery G
 
 # How to load the dataset
 
-Run the Cypher in `cypher/import.cypher` against your Neo4j instance using Browser (you will need to remove the `:auto` commands if you want to run in cypher-shekk`). Note that the node and relationship counts will exceed the Aura free tier allowances.
+Run the Cypher in `cypher/import.cypher` against your Neo4j instance using Browser (you will need to remove the `:auto` commands if you want to run in cypher-shell). Note that the node and relationship counts will exceed the Aura free tier allowances.
 
 Try it out with a query like this one:
 
