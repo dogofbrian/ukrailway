@@ -2,6 +2,8 @@
 
 UK railway data extracted from publicly available datasets (see [Rail Delivery Group page](https://www.raildeliverygroup.com/our-services/rail-data/fares-timetable-data.html)). It works as a good dataset for learning how Cypher's [quantified path patterns] work. Check out the link for the documentation on how to use.
 
+![Diagram of sample data](./uk-railway-sample-data.png)
+
 # How to load the dataset
 
 Run the Cypher in `cypher/import.cypher` against your Neo4j instance using Browser (you will need to remove the `:auto` commands if you want to run in cypher-shekk`). Note that the node and relationship counts will exceed the Aura free tier allowances.
