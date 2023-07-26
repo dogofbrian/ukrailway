@@ -1,6 +1,6 @@
 # UK Railway Graph
 
-UK railway data extracted from publicly available datasets (see [Rail Delivery Group page](https://www.raildeliverygroup.com/our-services/rail-data/fares-timetable-data.html)). It works as a good dataset for learning how Cypher's [quantified path patterns] work. Check out the link for the documentation on how to use.
+UK railway data extracted from publicly available datasets (see [Rail Delivery Group page](https://www.raildeliverygroup.com/our-services/rail-data/fares-timetable-data.html)). It works as a good dataset for learning how Cypher's [quantified path patterns](https://neo4j.com/docs/cypher-manual/current/patterns/concepts/#quantified-path-patterns) work.
 
 ![Diagram of sample data](./uk-railway-sample-data.png)
 
