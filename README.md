@@ -13,10 +13,10 @@ Try it out with a query like this one:
 ```cypher
 MATCH (dmk:Station {name: 'Denmark Hill'})<-[:CALLS_AT]-(l1a:CallingPoint)
         (()-[:NEXT]->(n) 
-          WHERE NOT EXISTS { (n)-[:CALLS_AT]->(:Station {groupName: 'LONDON GROUP'}) })+
+          WHERE NOT EXISTS { (n)-[:CALLS_AT]->(:Station:LondonGroup) })+
         (l1b)-[:CALLS_AT]->(x:Station)<-[:CALLS_AT]-(l2a:CallingPoint)
         (()-[:NEXT]->(m)
-          WHERE NOT EXISTS { (m)-[:CALLS_AT]->(:Station {groupName: 'LONDON GROUP'}) })+
+          WHERE NOT EXISTS { (m)-[:CALLS_AT]->(:Station:LondonGroup) })+
         (l2b)-[:CALLS_AT]->(gtw:Station {name: 'Gatwick Airport'})
 MATCH (l1a)-[:HAS]->(s1:Stop)-[:NEXT]->+(s2)<-[:HAS]-(l1b)
         WHERE time('09:30') < s1.departs < time('10:00')
