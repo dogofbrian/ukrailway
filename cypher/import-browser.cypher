@@ -6,7 +6,9 @@ SET s.id = toInteger(row.id),
     s.name = row.name,
     s.tiplocCode = row.tiplocCode,
     s.crsCode = row.crsCode,
-    s.location = point({latitude: toFloat(row.latitude), longitude: toFloat(row.longitude)});
+    s.location = point({latitude: toFloat(row.latitude), longitude: toFloat(row.longitude)})
+WITH s WHERE row.groupName = 'LONDON GROUP'
+SET s:LondonGroup;
 
 :auto
 LOAD CSV WITH HEADERS FROM "https://raw.githubusercontent.com/dogofbrian/ukrailway/main/data/calling_points.csv" AS row
